@@ -1,6 +1,7 @@
 'use client'
 
 import {useState} from "react";
+import Link from "next/link";
 
 export default function LoginPage() {
 
@@ -15,7 +16,7 @@ export default function LoginPage() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <h1>SignUp</h1>
+            <h1>Login</h1>
             <hr/>
             <label htmlFor="username">Email</label>
             <input
@@ -36,8 +37,9 @@ export default function LoginPage() {
                 placeholder="Password"
             />
             <button className='p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600' onClick={onLogin}>
-                Sign Up
+                Login here
             </button>
+            <Link href="/signup">Visit signup page</Link>
 
         </div>
     )

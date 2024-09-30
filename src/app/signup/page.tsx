@@ -1,6 +1,7 @@
 'use client'
 
 import {useState} from "react";
+import Link from "next/link";
 
 export default function SignUpPage() {
 
@@ -46,8 +47,9 @@ export default function SignUpPage() {
                 placeholder="Password"
             />
             <button className='p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600' onClick={onSignUp}>
-                Sign Up
+                Sign Up here
             </button>
+            <Link href="/login">Visit login page</Link>
 
         </div>
     )
